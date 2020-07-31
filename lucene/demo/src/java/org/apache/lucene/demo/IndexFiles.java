@@ -44,6 +44,7 @@ import org.apache.lucene.index.Term;
 import org.apache.lucene.store.Directory;
 import org.apache.lucene.store.FSDirectory;
 
+
 /** Index all text files under a directory.
  * <p>
  * This is a command-line application demonstrating simple Lucene indexing.

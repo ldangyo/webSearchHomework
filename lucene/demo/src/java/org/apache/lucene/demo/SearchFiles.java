@@ -89,7 +89,7 @@ public class SearchFiles {
     
     IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get(index)));
     IndexSearcher searcher = new IndexSearcher(reader);
-    Analyzer analyzer = new StandardAnalyzer();
+    Analyzer analyzer = new CMPT456Analyzer();
 
     BufferedReader in = null;
     if (queries != null) {
