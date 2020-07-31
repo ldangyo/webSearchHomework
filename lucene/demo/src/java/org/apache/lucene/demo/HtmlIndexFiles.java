@@ -193,12 +193,10 @@ public class HtmlIndexFiles {
                 // so that the text of the file is tokenized and indexed, but not stored.
                 // Note that FileReader expects the file to be in UTF-8 encoding.
                 // If that's not the case searching for special characters will fail.
-                System.out.println(htmlParser.title);
-                System.out.println(htmlParser.body);
                 doc.add(new TextField("contents", htmlParser.title.toLowerCase() + htmlParser.body.toLowerCase(), Store.YES));
 
             } catch (Exception e) {
-                System.out.println("ERROR------------------");
+                System.out.println("ERROR");
             }
 
             if (writer.getConfig().getOpenMode() == OpenMode.CREATE) {
